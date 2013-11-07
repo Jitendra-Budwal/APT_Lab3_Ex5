@@ -24,11 +24,6 @@ public class TestTempConv {
        //WebDriver driver = new FirefoxDriver();
        ProfilesIni allProfiles = new ProfilesIni();
        FirefoxProfile profile = new FirefoxProfile(new File("C:\\commondir\\Selenium_FireFox_profile"));
-//       FirefoxProfile profile = allProfiles.getProfile("WebDriver");
-//       profile.setPreference("width", 720);
-//       profile.setPreference("height", 837);
-//       profile.setPreference("screenX", 0);
-//       profile.setPreference("screenY", 0);
        WebDriver driver = new FirefoxDriver(profile);       
 
        TestTempConv gs = new TestTempConv();
@@ -135,7 +130,7 @@ public class TestTempConv {
 
        //end of tests.
        System.out.println(((System.currentTimeMillis() - t0)/1000) + ":  end of Tests.");
-//       driver.close();
+       driver.close();
 
     }
 
